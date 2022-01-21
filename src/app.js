@@ -33,9 +33,9 @@ app.get('/about' , (req, res)=> {
 
 app.get( '/help' , (req,res)=>{
     res.render('help', {
-        title:'It\'s a weather app where you can search weather of any city by mentioning its name.',
+        title:'Help',
         name:'Ved',
-        msg:''
+        msg:'It\'s a weather app where you can search weather of any city by mentioning its name.'
     })
 })
 
