@@ -24,8 +24,10 @@ formClick.addEventListener('submit' , (e)=>{
             if(data.error)
             given.textContent = data.error
             else
+            {
             given.textContent = data.location 
             given1.textContent = 'Forecast: '+ data.forecast+ '  || Temperature: '+ data.temperature;
+            }
         })
     })
 })

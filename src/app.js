@@ -27,15 +27,15 @@ app.get('/about' , (req, res)=> {
     res.render('about', {
         title:'About',
         name:'Ved',
-        msg:'It\'s a weather app where you can search weather of any city by mentioned it\'s name'
+        msg:'Created by Ved Prakash'
     })
 })
 
 app.get( '/help' , (req,res)=>{
     res.render('help', {
-        title:'Help',
+        title:'It\'s a weather app where you can search weather of any city by mentioning its name.',
         name:'Ved',
-        msg:'We can help you out here'
+        msg:''
     })
 })
 
@@ -91,5 +91,5 @@ app.get('*' , (req,res)=>{
     })
 })
 app.listen( port , ()=>{
-    console.log('Server is running!')
+    console.log('Server is running at ' + port+'!')
 })
